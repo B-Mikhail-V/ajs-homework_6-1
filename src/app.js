@@ -12,6 +12,7 @@ export default function orderByProps(obj, params) {
 
   // сортировка оставшего списка ключей и добавление к новому списку ключей
   kk.sort();
+  /* eslint-disable-next-line */
   for (const item in kk) {
     // if (kk.hasOwnProperty(item)) {
     firstArray.push(kk[item]);
@@ -19,6 +20,7 @@ export default function orderByProps(obj, params) {
   }
 
   // формирование нового объекта
+  /* eslint-disable-next-line */
   for (const kk in firstArray) {
     objNew[firstArray[kk]] = obj[firstArray[kk]];
   }
